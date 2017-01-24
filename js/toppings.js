@@ -38,13 +38,19 @@ var sandwich = (function(originalSandwich){
     return toppingPrices[topping];
   };
 
+  // ADDING MUSTARD TO THE TOPPINGS LIST:
+  originalSandwich.setTopping = function(obj){
+    console.log("obj", obj);
+    toppingPrices[Object.keys(obj)] = Object.values(obj)[0];
+    console.log("show me the toppings", toppingPrices);
+  };
+
   return originalSandwich;
   // console.log "sandwich" returns an Object that contains:
   //   getSandwichName: (whichone)
   //   getSandwichPrice: (sandwichname)
   //   getToppingPrice: (topping)
   //   __proto__: Object
-
 
 })(sandwich);
 // pass in parameter/argument "sandwich" to get it to immediately invoke

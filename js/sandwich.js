@@ -19,7 +19,7 @@ var sandwich = (function() {
     }
   };
 
-})();
+})(); // THIS IS THE IIFE PART!!! where you call it right away
 // }()); this will probably work too
 
 // sandwich returns as an object
