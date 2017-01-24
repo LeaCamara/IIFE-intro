@@ -39,6 +39,11 @@ var sandwich = (function(originalSandwich){
   };
 
   return originalSandwich;
+  // console.log "sandwich" returns an Object that contains:
+  //   getSandwichName: (whichone)
+  //   getSandwichPrice: (sandwichname)
+  //   getToppingPrice: (topping)
+  //   __proto__: Object
 
 
 })(sandwich);
