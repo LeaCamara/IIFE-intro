@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IIFE Intro</title>
+</head>
+<body>
+  <h1>IIFE Intro</h1>
+  <h2>Immediately Invoked Function Expression</h2>
+  <ul>
+    <li>a JavaScript function that runs as soon as it is defined</li>
+    <li>a function that is written as an expression that runs right away</li>
+    <li>instead of writing a function declaration or function expression and then calling later</li>
+    <li>IIFE = you don't invoke/call it separately</li>
+    <li>creates new scope and creates “privacy”</li>
+  </ul>
+  <h3>IIFE Augmentation Pattern</h3>
+  <h4>To Augment One Single Variable on the Global Scope</h4>
+  <ul>
+    <li>Define IIFE in the first (main) file. Return a literal object.</li>
+    <li>In 2nd file, pass original function name in at bottom.</li>
+    <li>Original function name becomes argument at the top of new function. (Give it a slightly different name.)</li>
+    <li>Augment it with new key: value pairs.</li>
+    <li>Return it right back out again.</li>
+  </ul>
+  <p>Makes it easier for mutliple developers on a team to work on functionality and add/modify features by splitting up into multiple JS files where each JS file deals with only one specific feature.</p>
+
+  <div id="sandwich"></div>
+  <div id="sandwich2"></div>
+
+
+  <script type="text/javascript" src="js/sandwich.js"></script>
+  <script type="text/javascript" src="js/toppings.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
